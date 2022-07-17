@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>AuroState Network</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="../../master.css">
+        <link rel="stylesheet" href="user_detail.css">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <div class="div-top-container">
+            <div class="div-left">
+                <div class="div-a-logo-center-container">
+                    <div class="div-p-center">
+                        <a class="a-logo-center" href="<%= link_url_home %>">
+                            AuroraState
+                        </a>
+                    </div>
+                </div>
+                <div class="div-linkbar-container">
+                    <a href="<%= link_url_project %>"  class="a-nav-top">Projects</a>
+                    <a href="<%= link_url_about %>" class="a-nav-top">About</a>
+                    <a href="<%= link_url_contact %>" class="a-nav-top">Contact</a>
+                </div>
+            </div>
+            <div class="div-social">
+                <button class="btn-logout" id="btn-logout">Logout</button>
+                <a href="https://github.com/Ramirez0245" >
+                    <i class="fa fa-github" ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omar-ramirez-49ba0a157/" >
+                    <i class="fa fa-linkedin" ></i>
+                </a>
+            </div>
+        </div>
+        <!-- MAIN -->
+        <main class="main-user-detail">
+            <img class="img-profile" id="img-profile" src="../../assets/default-profile-image.jpg"> 
+            <form class="form-details">
+                <h1 class="h1-user-details">User Details</h1>
+                <div class="div-label-input">
+                    <label for="first-name" class="label-details"> First Name:</label>
+                    <input type="text" id="first-name" name="first-name"  class="input-details" value="<%= user_first %>" disabled>
+                    <label for="last-name" class="label-details"> Last Name:</label>
+                    <input type="text" id="last-name" name="last-name"  class="input-details" value="<%= user_last %>"disabled>
+                </div>
+                <div class="div-label-input">
+                    <label for="sex" class="label-details">Sex :</label>
+                    <input type="text" id="input-sex" name="sex"  class="input-details" value="<%= user_sex %>" disabled>
+                </div>
+                <div class="div-label-input"> 
+                    <label for="height" class="label-details">Height :</label>
+                    <input type="text" id="input-height" name="height"  class="input-details" value="<%= user_height %>" disabled>
+                </div>
+                <div class="div-label-input"> 
+                    <label for="blood-type" class="label-details">Blood Type :</label>
+                    <input type="text" id="input-blood-type" name="height"   class="input-details" value="<%= user_bloodtype %>" disabled>
+                </div>
+                <div class="div-label-input">
+                    <label for="company">Company: </label>
+                    <input type="text" id="input-company" name="company" value="<%= user_company %>"disabled>
+                </div>
+                <div class="div-label-input">
+                    <label for="phone-number" >Phone number: </label>
+                    <input type="tel" id="input-phone-number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                    placeholder="###-###-##-####" maxlength="12" name="phone-number" value="<%= user_phonenumber %>" disabled>
+                </div>
+                <div class="div-label-input">
+                    <label for="address">Address: </label>
+                    <input type="text" id="input-address" name="address" value="<%= user_address %>" disabled>          
+                </div>
+                <div class="div-label-input">
+                    <label for="address-2">Address 2: </label>
+                    <input type="text" id="input-address-2" name="address-2" value="<%= user_address2 %>" disabled>          
+                </div>
+                <div class="div-button-input-edit-submit">
+                    <button class="btn-edit" id='btn-edit'>Edit</button>
+                    <input class='input-disable' id='input-sumbit' type="submit" disabled>
+                </div>
+                <p class="p-status" id="p-status"></p>
+            </form>
+        </main>
+        <script type="module" src="user_detail.js"></script>
+        <script type="module" src="../../directory/directory.js"></script>
+    </body>
+</html>

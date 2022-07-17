@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>AuroState Network</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="../master.css">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <div class="div-top-container">
+            <div class="div-left">
+                <div class="div-a-logo-center-container">
+                    <div class="div-p-center">
+                            <a class="a-logo-center" href="<%= link_url_home %>">
+                                AuroraState
+                            </a>
+                    </div>
+                </div>   
+                <div class="div-linkbar-container">
+                        <a href="<%= link_url_project %>"  class="a-nav-top">Projects</a>
+                        <a href="<%= link_url_about %>" class="a-nav-top">About</a>
+                        <a href="<%= link_url_contact %>" class="a-nav-top">Contact</a>
+                </div>
+            </div>
+            <div class="div-social">
+                <button class="btn-logout" id="btn-logout">Logout</button>
+                <a href="https://github.com/Ramirez0245" >
+                    <i class="fa fa-github" ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omar-ramirez-49ba0a157/" >
+                    <i class="fa fa-linkedin" ></i>
+                </a>
+            </div>
+        </div>
+        <main class="main-about">
+            <div class="div-about-container">
+                <h1> About me</h1>
+                <p class="p-about">I am a software developer. I've been programming for about 3 years and developing for about  2 years.
+                    My main programming language is javascript. <br> I am experience in Node.js and React. 
+                    I have a bit of python programming experience. This website is fully ran by me.
+                </p>
+                <h2>About this website</h2>
+                <p class="p-about">This website is ran on ubunto and hosted on a cloud service provided, digital ocean.
+                    This website is powered by node.js and <br> express for the backend. The sever delivers html, css, and javascript for the frontend.
+                    The future some I'll be intergrating my ReactJS code into this website. <br>Any future and current projects will be hosted on this website.
+                </p>
+            </div>
+        </main>
+        <script type="module" src="about.js"></script>
+        <script type="module" src="../../directory/directory.js"></script>
+    </body>
+</html>

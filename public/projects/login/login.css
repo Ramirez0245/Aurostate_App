@@ -1,0 +1,80 @@
+input {
+    width: 170px;
+    font-size: 17px;
+}
+a {
+    text-decoration: none;
+    color: rgb(121, 150, 206);
+    font-size: 25px;
+}
+.form-login {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.div-logo-container {
+    display: flex;
+    flex: column nowrap;
+}
+.div-center-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.div-p-logo-center-container {
+    border: 5px solid rgb(73, 70, 70);
+    display: flex;
+    height: 800px;
+    width: 800px;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 50%;
+    flex-flow: column nowrap;
+    align-items: center; 
+    justify-content: center;
+}
+.div-p-center {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.p-logo-center {
+    font-family: 'Righteous', cursive;
+    font-size: 120px;
+    width: 100%;
+}
+.div-login-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    padding: 10px 20px 0px 20px;
+}
+.div-input-sumbit {
+    margin: 20px;
+    align-self: center;
+    justify-self: center;
+}
+.div-login {
+    display: flex;
+    padding: 0px 30px 0px 30px;
+    justify-content: space-between;
+    gap: 70px;
+}
+.input-enteries{
+    width: 210px;
+    font-size: 17px;
+}
+.div-register {
+    position: absolute;
+    right: 0px;
+    margin: 15px 60px 0px 0px;
+}
+.label-info-type {
+    font-size: 20px;
+}
+.p-status {
+    text-align: center;
+    color: red;
+}

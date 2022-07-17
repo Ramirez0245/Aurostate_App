@@ -1,0 +1,25 @@
+h2 {
+    margin: 0px;
+}
+.div-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    font-family: 'Bona Nova', serif;
+}
+.div-main-title {
+    border: 2px ridge rgb(219, 227, 234);
+    background-color: rgb(248, 251, 254);
+    margin: 200px 0px 20px 0px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 50px;
+    padding: 100px;
+}
+.div-h2-welcome {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    font-size: 20px;
+}
