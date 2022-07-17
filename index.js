@@ -1,4 +1,4 @@
-if ( process.env.NODE_ENV != 'production') {
+if ( process.env.NODE_ENV = 'production') {
     console.log('Hello from process.env if statment');
     
     require('dotenv').config();
