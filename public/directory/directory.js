@@ -1,6 +1,6 @@
 console.log('directory RAN')
 const directory = {
-    domain: 'http://localhost:5000/',
+    domain: 'https://aurorastate.network/',
     apiregister: 'api/register',
     apilogin: 'api/login',
     apilogout: 'api/logout',

@@ -2,7 +2,7 @@ const main = 'main'
 const projects = 'projects'
 const extention = 'ejs'
 
-const domain = 'http://localhost:5000/'
+const domain = 'https://aurorastate.network/'
 
 const directory = {
     public_ejs_render_paths: {

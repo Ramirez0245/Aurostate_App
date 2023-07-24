@@ -1,9 +1,9 @@
-if ( process.env.NODE_ENV = 'production') {
-    console.log('Hello from process.env if statment');
+
+ console.log('Hello from process.env if statment');
     
-    require('dotenv').config();
-    console.log(process.env.SESSION_SECRET);
-}
+  require('dotenv').config();
+ console.log(process.env.SESSION_SECRET);
+
 
 const express = require('express')
 const app = express()
